@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-todo list</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Todo List</h1>
+        <form>
+          <input id="todo_input" type="text" placeholder="오늘 할 일..." />
+          <button id="todo_button" type="submit"><i class="xi-plus"></i></button>
+          <div class="select">
+            <select name="todos" class="filter_select">
+              <option value="all">전체</option>
+              <option value="finished">완료한 일</option>
+              <option value="unfinished">해야할 일</option>
+            </select>
+          </div>
+        </form>
+      </header>
+      <main class="todo_container">
+        <ul class="todo_list"></ul>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
